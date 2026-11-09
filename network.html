@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9ebeb">
+  <meta name="format-detection" content="telephone=no">
+  <title>СберМобайл — Сеть</title>
+  <link rel="icon" href="./assets/54717.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./fonts.css?v=beget-2026-11-09">
+  <link rel="stylesheet" href="./network.css?v=beget-2026-11-09">
+  <script src="./network.js?v=beget-2026-11-09" defer></script>
+</head>
+<body>
+  <main class="network-page">
+    <header class="network-header">
+      <a class="network-back" href="./index.html" aria-label="Назад на главную"><img src="./assets/network-back.svg" width="24" height="24" alt=""></a>
+      <button class="network-phone-trigger" type="button" aria-label="Выбрать номер телефона"><span class="network-account-name">Главная</span><span class="network-phone-line"><strong class="network-phone-number">+7 (999) 252-61-05</strong><img src="./assets/network-chevron.svg" width="16" height="16" alt=""></span></button>
+      <span class="network-header-spacer" aria-hidden="true"></span>
+    </header>
+    <nav class="network-tabs" aria-label="Разделы сети">
+      <button class="network-tab is-active" type="button" data-network-tab="choice" aria-current="page">Выбор сети</button>
+      <button class="network-tab" type="button" data-network-tab="speed">Проверка интернета</button>
+    </nav>
+    <section class="network-panel network-choice" data-network-panel="choice" aria-label="Выбор сети">
+      <div class="network-choice-scroll">
+        <p class="network-location-subtitle">Данные по текущей локации</p>
+        <div class="network-options" role="radiogroup" aria-label="Доступные сети">
+          <button class="network-option" type="button" data-network="auto" role="radio" aria-checked="true"><img class="network-multinet-icon" src="./assets/network-multinet-home.svg" width="24" height="24" alt=""><span class="network-option-info"><strong>Мультисеть</strong></span><span class="network-option-end"><img class="network-radio-on" src="./assets/network-radio-on.svg" width="24" height="24" alt=""><img class="network-radio-off" src="./assets/network-radio-off.svg" width="24" height="24" alt=""></span></button>
+          <button class="network-option" type="button" data-network="t2" data-download-mbps="22.53" role="radio" aria-checked="false"><span class="network-signal" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="network-option-info"><strong>Т2</strong><small aria-label="Скорость загрузки 22,53 Мбит/с">22,53 Мбит/с</small></span><span class="network-option-end"><span class="network-recommended" hidden>Рекомендуем</span><img class="network-radio-on" src="./assets/network-radio-on.svg" width="24" height="24" alt=""><img class="network-radio-off" src="./assets/network-radio-off.svg" width="24" height="24" alt=""></span></button>
+          <button class="network-option" type="button" data-network="megafon" data-download-mbps="1.24" role="radio" aria-checked="false"><span class="network-signal is-weak" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="network-option-info"><strong>МегаФон</strong><small aria-label="Скорость загрузки 1,24 Мбит/с">1,24 Мбит/с</small></span><span class="network-option-end"><img class="network-radio-on" src="./assets/network-radio-on.svg" width="24" height="24" alt=""><img class="network-radio-off" src="./assets/network-radio-off.svg" width="24" height="24" alt=""></span></button>
+        </div>
+        <div class="network-warning" role="note" hidden><img src="./assets/network-alert.svg" width="24" height="24" alt=""><span>Подключение займёт 5–30 минут. После запуска отменить его нельзя.</span></div>
+        <div class="network-info"><h2>Что такое мультисеть?</h2><p>Ваша SIM работает с несколькими операторами и выбирает лучший сигнал. Если хотите — можете закрепить одного.</p></div>
+      </div>
+      <div class="network-actions"><button class="network-save" type="button" disabled>Сохранить</button></div>
+    </section>
+    <section class="network-panel network-reconnect" data-network-panel="reconnect" aria-label="Переподключение" hidden>
+      <div class="network-reconnect-inner" role="status" aria-live="polite">
+        <img class="network-carrier" src="./assets/network-reconnect-carrier.webp" width="96" height="96" alt="">
+        <div><h2>Переподключение<br>на сеть <span class="network-target-name">Т2</span></h2><p>Сеть переключится в ближайшее время</p></div>
+      </div>
+    </section>
+    <section class="network-panel network-speed" data-network-panel="speed" aria-label="Проверка интернета" hidden>
+      <div class="network-speed-gauge" data-speed-stage="ready">
+        <svg class="network-speed-ring" viewBox="0 0 328 460" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs><linearGradient id="network-speed-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="9" x2="0" y2="451"><stop offset="0" stop-color="#e24e03"/><stop offset=".2" stop-color="#fa5f05"/><stop offset="1" stop-color="#ffbc35"/></linearGradient><linearGradient id="network-speed-gradient-right" gradientUnits="userSpaceOnUse" x1="0" y1="9" x2="0" y2="451"><stop offset="0" stop-color="#e24e03"/><stop offset=".3" stop-color="#fa5f05"/><stop offset="1" stop-color="#e24e03"/></linearGradient></defs>
+          <rect class="network-speed-ring-track" x="9" y="9" width="310" height="442" rx="155"/>
+          <path class="network-speed-ring-progress"/>
+          <path class="network-speed-ring-progress-right"/>
+          <circle class="network-speed-ring-cap" cx="164" cy="451" r="6"/>
+          <path class="network-speed-ticks" d="M164 18v8 M18 164h8 M18 296h8 M310 164h-8 M310 296h-8 M61 61l6 6 M267 61l-6 6 M61 399l6-6 M267 399l-6-6"/>
+          <path class="network-speed-start-tick" d="M164 440v24"/>
+        </svg>
+        <div class="network-speed-center">
+          <div class="network-speed-direction" hidden><img src="./assets/network-speed-down.svg" width="16" height="16" alt=""><span>Входящая</span></div>
+          <button class="network-speed-play" type="button" aria-label="Начать проверку скорости"><img src="./assets/network-speed-play.svg" width="80" height="80" alt=""><span>Нажмите,<br>чтобы измерить</span></button>
+          <div class="network-speed-spinner" role="status" aria-label="Подготовка проверки" hidden><img src="./assets/network-speed-loader.svg" width="32" height="32" alt=""></div>
+          <div class="network-speed-value" aria-live="off" hidden><strong>0,00</strong><span>Мбит/с</span></div>
+          <button class="network-speed-stop" type="button" aria-label="Остановить проверку" hidden><svg viewBox="0 0 68 68" width="68" height="68" fill="none" aria-hidden="true"><circle cx="34" cy="34" r="32" stroke="#ECF0F2" stroke-width="4"/><circle class="network-stop-progress" cx="34" cy="34" r="32" pathLength="100" transform="rotate(90 34 34)" stroke="#FA5F05" stroke-width="4" stroke-linecap="round"/><path d="M25 22h18a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H25a3 3 0 0 1-3-3V25a3 3 0 0 1 3-3Z" fill="#0B0C0D"/></svg></button>
+        </div>
+      </div>
+      <p class="network-speed-privacy">Нажимая кнопку, я соглашаюсь<br>с <span>условиями конфиденциальности</span></p>
+    </section>
+    <section class="network-panel network-result" data-network-panel="result" aria-label="Результаты проверки" hidden>
+      <div class="network-result-content"><img class="network-fire" src="./assets/network-speed-result.webp" width="96" height="96" alt=""><h2>Интернет — огонь!</h2><p>Хватит для просмотра видео в 2K/4K<br>и быстрой загрузки больших файлов</p><div class="network-result-stats"><div><span>Входящая</span><strong>22,53</strong><small>Мбит/с</small></div><div><span>Исходящая</span><strong>9,53</strong><small>Мбит/с</small></div><div><span>Задержка</span><strong>12</strong><small>мс</small></div></div></div>
+      <button class="network-speed-again" type="button">Проверить ещё раз</button>
+    </section>
+    <section class="network-phone-picker" aria-label="Выберите номер телефона" hidden>
+      <button class="network-picker-back" type="button" aria-label="Назад к сети"><img src="./assets/network-back.svg" width="24" height="24" alt=""></button>
+      <h1>Выберите номер<br>телефона</h1>
+      <div class="network-phone-options">
+        <button class="network-phone-option" type="button" data-phone="main"><span><small>Основной номер</small><strong>+7 (999) 252-61-05</strong></span><img src="./assets/387c5.svg" width="16" height="16" alt=""></button>
+        <button class="network-phone-option" type="button" data-phone="second"><span><strong>+7 (914) 680-40-60</strong></span><img src="./assets/387c5.svg" width="16" height="16" alt=""></button>
+        <button class="network-phone-option" type="button" data-phone="third"><span><strong>+7 (914) 680-40-61</strong></span><img src="./assets/387c5.svg" width="16" height="16" alt=""></button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

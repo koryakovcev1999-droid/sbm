@@ -1,0 +1,37 @@
+.assistant-page{background:var(--background)}
+.assistant-screen{width:100%;max-width:480px;margin:0 auto;overflow:hidden;background:linear-gradient(180deg,#ffbc35 0px,#fa5f05 445.4928px,#e34e03 556.981px,var(--background) 556.981px)}
+.assistant-hero{position:relative;height:403px;color:#fff}
+.assistant-back{position:absolute;left:3px;top:31.54px;width:48px;height:48px;display:grid;place-items:center}
+.assistant-back:focus-visible{outline:2px solid #fff;outline-offset:-4px;border-radius:12px}
+.assistant-title{position:absolute;top:87.54px;left:calc(50% - 1px);width:260px;height:33px;transform:translateX(-50%)}
+.assistant-title h1{position:absolute;top:-2px;left:77px;transform:translateX(-50%);font:600 32px/32px var(--display);letter-spacing:-1.6px;white-space:nowrap}
+.assistant-plus{position:absolute;left:157px;top:1.5px;width:100px;height:30px;border:1.2px solid #fff;border-radius:22px;background:rgba(255,255,255,.1)}
+.assistant-plus img{position:absolute;left:11.99px;top:5.2px}
+.assistant-description{position:absolute;left:15px;right:17px;top:128.54px;text-align:center;color:rgba(255,255,255,.7);font:400 16px/20px var(--text);letter-spacing:-.65px}
+.assistant-hero-art{position:absolute;left:calc(50% - 1px);top:164.54px;width:156px;height:156px;transform:translateX(-50%)}
+.assistant-hero-art>span{position:absolute;left:2.08%;right:2.08%;top:calc(50% - 2.44px);aspect-ratio:819/770;transform:translateY(-50%);overflow:hidden}
+.assistant-hero-art img{position:absolute;left:-18.19%;top:-16.49%;width:129.3%;height:137.53%}
+.assistant-price{position:absolute;left:15px;right:17px;top:340.54px;display:flex;flex-direction:column;align-items:center;gap:4px}
+.assistant-price strong{font:600 17px/20px var(--display);letter-spacing:-.35px}
+.assistant-price>span{font:400 12px/14px var(--text);letter-spacing:-.12px;color:rgba(255,255,255,.7)}
+.assistant-content{position:relative;display:flex;flex-direction:column;gap:8px;min-height:640px;padding:16px 16px 0;border-radius:24px 24px 0 0;background:var(--background)}
+.assistant-features{display:flex;flex-direction:column;gap:8px}
+.assistant-feature{display:flex;align-items:center;gap:16px;min-height:80px;padding:16px;border-radius:24px;background:#fff}
+.assistant-feature>span:last-child{display:flex;flex:1;flex-direction:column;gap:4px;min-width:0}
+.assistant-feature h2{font:600 17px/20px var(--display);letter-spacing:-.35px}
+.assistant-feature p{font:400 14px/16px var(--text);letter-spacing:-.42px;color:var(--secondary)}
+.assistant-icon{position:relative;display:grid;place-items:center;flex:none;width:48px;height:48px}
+.assistant-icon-silence>span{position:absolute;left:-9.93%;right:-12.71%;top:calc(50% + .73px);aspect-ratio:1;transform:translateY(-50%);display:grid;place-items:center}
+.assistant-icon-silence img{width:48.297px;height:48.297px;transform:rotate(-14.53deg)}
+.assistant-icon-important img{position:absolute;left:-7.29%;top:calc(50% - .5px);width:102.08%;height:auto;transform:translateY(-50%)}
+.assistant-favourite-art{position:absolute;left:3.64%;right:3.64%;top:50%;aspect-ratio:1;transform:translateY(-50%);mask-image:url('./assets/assistant-3e461.webp');-webkit-mask-image:url('./assets/assistant-3e461.webp');mask-size:44.509px 44.509px;-webkit-mask-size:44.509px 44.509px;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat}
+.assistant-favourite-art img{width:100%;height:100%}
+.assistant-favourite-light{position:absolute;inset:28.49% 37.63% 15.93% 2.26%;mix-blend-mode:soft-light;mask-image:url('./assets/assistant-3e461.webp');-webkit-mask-image:url('./assets/assistant-3e461.webp');mask-position:.659px -11.93px;-webkit-mask-position:.659px -11.93px;mask-size:44.509px 44.509px;-webkit-mask-size:44.509px 44.509px;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat}
+.assistant-favourite-light img{position:absolute;left:-.76%;top:-.82%}
+.assistant-icon-settings img{width:43.076px;height:43.076px}
+.assistant-icon-voices{overflow:hidden}
+.assistant-icon-voices img{position:absolute;left:-14.58%;width:120.83%;height:auto}
+.assistant-actions{margin-top:auto;padding-bottom:36px}
+.assistant-connect{display:grid;place-items:center;height:52px;background:var(--brand);border-radius:100px;color:#fff;font:600 17px/20px var(--display);letter-spacing:-.35px;user-select:none}
+.assistant-home-indicator{position:absolute;bottom:6px;left:50%;width:100px;height:3px;border-radius:100px;background:var(--ink);transform:translateX(-50%)}
+@media(max-width:359px){.assistant-description{font-size:14px}}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#e9ebeb">
+  <title>СберМобайл — Пополнение баланса</title>
+  <link rel="icon" href="./assets/54717.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./fonts.css?v=beget-2026-11-09">
+  <link rel="stylesheet" href="./styles.css?v=beget-2026-11-09">
+  <link rel="stylesheet" href="./topup.css?v=beget-2026-11-09">
+  <script src="./topup.js?v=beget-2026-11-09" defer></script>
+</head>
+<body class="topup-page">
+  <main class="topup-screen">
+    <header class="topup-header">
+      <button class="topup-nav-button topup-back" type="button" aria-label="Назад"><img src="./assets/topup-back.svg" width="24" height="24" alt=""></button>
+      <div class="topup-account">
+        <p class="topup-account-caption">Главный номер · 300 ₽</p>
+        <h1 class="topup-account-phone">+7 (999) 252-61-05</h1>
+      </div>
+      <button class="topup-nav-button topup-history" type="button" aria-label="История пополнений"><img src="./assets/topup-history.svg" width="24" height="24" alt=""></button>
+    </header>
+
+    <section class="topup-amount-section" aria-label="Сумма пополнения">
+      <p class="topup-amount-caption">Сумма пополнения</p>
+      <div class="topup-amount-display"><span class="topup-amount-value" role="textbox" aria-label="Сумма пополнения, 5 рублей" tabindex="0"><span class="topup-digits-before">5</span><span class="topup-caret is-blinking" aria-hidden="true"></span><span class="topup-digits-after"></span></span><span class="topup-currency">₽</span></div>
+    </section>
+
+    <button class="topup-alternate" type="button" role="switch" aria-checked="false"><span>Альтернативный ввод</span><span class="topup-switch-icon"><img src="./assets/topup-switch-off.svg" width="43" height="34" alt=""></span></button>
+
+    <div class="topup-keyboard" aria-label="Цифровая клавиатура">
+      <button type="button" data-digit="1">1</button><button type="button" data-digit="2">2</button><button type="button" data-digit="3">3</button>
+      <button type="button" data-digit="4">4</button><button type="button" data-digit="5">5</button><button type="button" data-digit="6">6</button>
+      <button type="button" data-digit="7">7</button><button type="button" data-digit="8">8</button><button type="button" data-digit="9">9</button>
+      <span aria-hidden="true"></span><button type="button" data-digit="0">0</button><button type="button" class="topup-delete" aria-label="Удалить последнюю цифру"><img src="./assets/topup-backspace.svg" width="32" height="32" alt=""></button>
+    </div>
+    <div class="topup-rotary" aria-label="Круговой набор суммы" hidden>
+      <div class="topup-rotary-wheel">
+        <button type="button" data-digit="1" style="--angle:45deg;--turn:45">1</button>
+        <button type="button" data-digit="2" style="--angle:15deg;--turn:75">2</button>
+        <button type="button" data-digit="3" style="--angle:-15deg;--turn:105">3</button>
+        <button type="button" data-digit="4" style="--angle:-45deg;--turn:135">4</button>
+        <button type="button" data-digit="5" style="--angle:-75deg;--turn:165">5</button>
+        <button type="button" data-digit="6" style="--angle:-105deg;--turn:195">6</button>
+        <button type="button" data-digit="7" style="--angle:-135deg;--turn:225">7</button>
+        <button type="button" data-digit="8" style="--angle:-165deg;--turn:255">8</button>
+        <button type="button" data-digit="9" style="--angle:-195deg;--turn:285">9</button>
+        <button type="button" data-digit="0" style="--angle:-225deg;--turn:315">0</button>
+      </div>
+      <button class="topup-rotary-delete" type="button" aria-label="Удалить последнюю цифру"><img src="./assets/topup-backspace.svg" width="36" height="36" alt=""></button>
+      <span class="topup-rotary-slot" aria-hidden="true"></span>
+    </div>
+
+    <div class="topup-pay-row">
+      <button class="topup-card" type="button" aria-label="Карта Сбер, последние цифры 8316"><img src="./assets/topup-sber-card.svg" width="32" height="32" alt=""><span>•• 8316</span></button>
+      <button class="topup-pay" type="button">Оплатить</button>
+    </div>
+    <div class="topup-home-indicator" aria-hidden="true"><span></span></div>
+    <p class="topup-toast" role="status" hidden></p>
+  </main>
+</body>
+</html>

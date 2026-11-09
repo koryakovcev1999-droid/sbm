@@ -1,0 +1,213 @@
+{
+  "groups": [
+    {
+      "id": "assistant",
+      "title": "Ассистент плюс",
+      "slides": [
+        {
+          "id": "protection",
+          "title": "Усиленная защита вашей связи с Ассистент",
+          "titleBadge": "assistant-plus",
+          "subtitle": "Три эксклюзивных персонажа, персональные автоответы, новые режимы и ещё больше функций",
+          "image": "./assets/story-assistant-protection.webp",
+          "background": {
+            "theme": "purple",
+            "color": "#7767bc"
+          },
+          "layout": "protection",
+          "action": {
+            "label": "Узнать подробнее",
+            "href": "./assistant.html"
+          },
+          "imageLayout": {
+            "width": 328,
+            "height": 380
+          }
+        },
+        {
+          "id": "characters",
+          "title": "Новые уникальные персонажи",
+          "subtitle": "Не пропускайте важные звонки: ассистент пообщается с человеком и передаст вам суть разговора",
+          "image": "./assets/story-assistant-characters.webp",
+          "background": {
+            "theme": "orange",
+            "color": "#fa5f05"
+          },
+          "layout": "characters",
+          "action": {
+            "label": "Узнать подробнее",
+            "href": "./assistant.html"
+          },
+          "imageLayout": {
+            "width": 505,
+            "height": 420,
+            "offsetX": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Красивые номера",
+      "slides": [
+        {
+          "id": "beautiful-number",
+          "title": "Оформляйте красивый номер\nот 299 ₽",
+          "subtitle": "Выбираете понравившийся вариант — мы проверяем доступность и помогаем оформить подключение",
+          "image": "./assets/story-beautiful-number.webp",
+          "background": {
+            "theme": "blue",
+            "color": "#587ecf"
+          },
+          "layout": "standard",
+          "action": {
+            "label": "Узнать подробнее"
+          },
+          "imageLayout": {
+            "width": 328,
+            "height": 404
+          }
+        }
+      ]
+    },
+    {
+      "id": "esim",
+      "title": "eSIM для путешествий",
+      "slides": [
+        {
+          "id": "travel-esim",
+          "title": "Выгодная связь в путешествии с eSIM",
+          "subtitle": "Выбираете понравившийся вариант — мы проверяем доступность и помогаем оформить подключение",
+          "image": "./assets/story-travel-esim.webp",
+          "background": {
+            "color": "#c8693e"
+          },
+          "layout": "standard",
+          "action": {
+            "label": "Узнать подробнее"
+          },
+          "imageLayout": {
+            "width": 423,
+            "height": 420,
+            "offsetX": -39.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "compact-bonuses",
+      "title": "Бонусы за оплату",
+      "slides": [
+        {
+          "id": "compact-bonuses",
+          "title": "Бонусы за оплату",
+          "subtitle": "Бонусы за оплату мобильной связи",
+          "image": "./assets/story-compact-bonuses.webp",
+          "background": {
+            "color": "#fa5f05"
+          },
+          "layout": "standard",
+          "action": {
+            "label": "Узнать подробнее"
+          },
+          "imageLayout": {
+            "width": 328,
+            "height": 328
+          }
+        }
+      ]
+    },
+    {
+      "id": "compact-numbers",
+      "title": "Красивые номера",
+      "slides": [
+        {
+          "id": "compact-numbers",
+          "title": "Красивые номера",
+          "subtitle": "Выберите красивый номер для своей SIM-карты",
+          "image": "./assets/story-compact-numbers.webp",
+          "background": {
+            "color": "#6c1dff"
+          },
+          "layout": "standard",
+          "action": {
+            "label": "Узнать подробнее"
+          },
+          "imageLayout": {
+            "width": 328,
+            "height": 328
+          }
+        }
+      ]
+    },
+    {
+      "id": "compact-minutes",
+      "title": "Минуты в подарок",
+      "slides": [
+        {
+          "id": "compact-minutes",
+          "title": "Минуты в подарок",
+          "subtitle": "Подарочные минуты для общения",
+          "image": "./assets/story-compact-minutes.webp",
+          "background": {
+            "color": "#1c5dd7"
+          },
+          "layout": "standard",
+          "action": {
+            "label": "Узнать подробнее"
+          },
+          "imageLayout": {
+            "width": 328,
+            "height": 328
+          }
+        }
+      ]
+    },
+    {
+      "id": "compact-internet",
+      "title": "Безлимит интернет",
+      "slides": [
+        {
+          "id": "compact-internet",
+          "title": "Безлимит интернет",
+          "subtitle": "Безлимитный интернет для вашей связи",
+          "image": "./assets/story-compact-internet.webp",
+          "background": {
+            "color": "#fa5f05"
+          },
+          "layout": "standard",
+          "action": {
+            "label": "Узнать подробнее"
+          },
+          "imageLayout": {
+            "width": 328,
+            "height": 328
+          }
+        }
+      ]
+    },
+    {
+      "id": "compact-tips",
+      "title": "Полезные советы",
+      "slides": [
+        {
+          "id": "compact-tips",
+          "title": "Полезные советы",
+          "subtitle": "Советы по использованию мобильной связи",
+          "image": "./assets/story-compact-tips.webp",
+          "background": {
+            "color": "#6ea6d6"
+          },
+          "layout": "standard",
+          "action": {
+            "label": "Узнать подробнее"
+          },
+          "imageLayout": {
+            "width": 328,
+            "height": 328
+          }
+        }
+      ]
+    }
+  ]
+}

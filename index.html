@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#e9ebeb">
+  <meta name="description" content="Личный кабинет: баланс, тариф и услуги мобильной связи.">
+  <title>СберМобайл — Главная</title>
+  <link rel="icon" href="./assets/54717.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/SBSansText-Regular-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/SBSansDisplay-SemiBold-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/new-year-sim-main.webp" as="image">
+  <link rel="stylesheet" href="./fonts.css?v=beget-2026-11-09">
+  <link rel="stylesheet" href="./styles.css?v=beget-2026-11-09">
+  <link rel="stylesheet" href="./stories.css?v=beget-2026-11-09">
+  <link rel="stylesheet" href="./network.css?v=beget-2026-11-09">
+  <script src="./entry.js?v=beget-2026-11-09" defer></script>
+  <script src="./stories.js?v=beget-2026-11-09" defer></script>
+</head>
+<body class="is-loading">
+  <script>
+    if (sessionStorage.getItem('sbm-return-from-profile') === '1') {
+      sessionStorage.removeItem('sbm-return-from-profile');
+      document.body.classList.remove('is-loading');
+    }
+  </script>
+  <section class="holiday-splash" role="status" aria-label="Загрузка СберМобайл">
+    <div class="holiday-art-stage" aria-hidden="true">
+      <img class="holiday-art" src="./assets/new-year-sim-main.webp" alt="">
+    </div>
+  </section>
+  <div class="app" data-node-id="25055:9461">
+    <header class="header" data-node-id="25112:318846">
+      <div class="header-actions">
+        <div class="bonuses" aria-label="1 640 бонусов Спасибо" data-node-id="25112:318848"><span>1 640</span><img class="bonus-logo" src="./assets/header-logo.svg" alt=""></div>
+        <div class="header-tools">
+          <a class="network-label" href="./network.html" aria-label="Открыть раздел сети" data-node-id="25213:14089">
+            <img class="network-icon" src="./assets/network-multinet-home.svg" width="20" height="20" alt="" data-node-id="25419:33717">
+          </a>
+          <a class="avatar" href="./profile.html" aria-label="Открыть профиль" data-node-id="25112:318862"><img src="./assets/header-userpic.svg" alt=""></a>
+        </div>
+        <div class="stories-mini" aria-label="Сториз в шапке">
+          <button class="story-mini-trigger story-trigger" type="button" data-story-group="assistant" aria-label="Прокрутить к сториз Ассистент плюс" tabindex="-1"><img loading="lazy" decoding="async" src="./assets/story-assistant.webp" alt=""></button>
+          <button class="story-mini-trigger story-trigger" type="button" data-story-group="numbers" aria-label="Прокрутить к сториз Красивые номера" tabindex="-1"><img loading="lazy" decoding="async" src="./assets/story-numbers.webp" alt=""></button>
+          <button class="story-mini-trigger story-trigger" type="button" data-story-group="esim" aria-label="Прокрутить к сториз eSIM" tabindex="-1"><img loading="lazy" decoding="async" src="./assets/story-esim.webp" alt=""></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main" aria-label="Личный кабинет">
+      <section class="stories" aria-label="Сториз" data-node-id="25041:64994">
+        <button class="story story-trigger" type="button" data-story-group="assistant" aria-label="Открыть сториз Ассистент плюс" data-node-id="25139:15597">
+          <img loading="lazy" decoding="async" src="./assets/story-assistant.webp" width="132" height="72" alt="Ассистент Plus">
+        </button>
+        <button class="story story-trigger" type="button" data-story-group="numbers" aria-label="Открыть сториз Красивые номера" data-node-id="25139:15603">
+          <img loading="lazy" decoding="async" src="./assets/story-numbers.webp" width="132" height="72" alt="Красивые номера">
+        </button>
+        <button class="story story-trigger" type="button" data-story-group="esim" aria-label="Открыть сториз eSIM" data-node-id="25139:15607">
+          <img loading="lazy" decoding="async" src="./assets/story-esim.webp" width="132" height="72" alt="Путешествия вместе с eSIM">
+        </button>
+      </section>
+      <template id="compact-stories">
+        <button class="story story-trigger story-compact story-compact-bonuses" type="button" data-story-group="compact-bonuses" aria-label="Открыть сториз Бонусы за оплату" data-node-id="25805:33400"><span class="compact-story-face"><span class="compact-bonus-large"><img src="./assets/story-compact-bonuses.webp" alt=""></span><span class="compact-bonus-small"><img src="./assets/story-compact-bonuses.webp" alt=""></span><span class="compact-story-title">Бонусы<br>за оплату</span></span></button>
+        <button class="story story-trigger story-compact story-compact-numbers" type="button" data-story-group="compact-numbers" aria-label="Открыть сториз Красивые номера" data-node-id="25805:33408"><span class="compact-story-face"><img src="./assets/story-compact-numbers.webp" alt=""><span class="compact-story-title">Красивые<br>номера</span></span></button>
+        <button class="story story-trigger story-compact story-compact-minutes" type="button" data-story-group="compact-minutes" aria-label="Открыть сториз Минуты в подарок" data-node-id="25805:33412"><span class="compact-story-face"><img src="./assets/story-compact-minutes.webp" alt=""><span class="compact-story-title">Минуты<br>в подарок</span></span></button>
+        <button class="story story-trigger story-compact story-compact-internet" type="button" data-story-group="compact-internet" aria-label="Открыть сториз Безлимит интернет" data-node-id="25805:33417"><span class="compact-story-face"><img src="./assets/story-compact-internet.webp" alt=""><span class="compact-story-title">Безлимит<br>интернет</span></span></button>
+        <button class="story story-trigger story-compact story-compact-bonuses" type="button" data-story-group="compact-numbers" aria-label="Открыть сториз Красивые номера" data-node-id="25805:33422"><span class="compact-story-face"><span class="compact-bonus-large"><img src="./assets/story-compact-bonuses.webp" alt=""></span><span class="compact-bonus-small"><img src="./assets/story-compact-bonuses.webp" alt=""></span><span class="compact-story-title">Красивые<br>номера</span></span></button>
+        <button class="story story-trigger story-compact story-compact-tips" type="button" data-story-group="compact-tips" aria-label="Открыть сториз Полезные советы" data-node-id="25805:33430"><span class="compact-story-face"><img class="compact-tips-back" src="./assets/story-compact-tips.webp" alt=""><img class="compact-tips-front" src="./assets/story-compact-tips.webp" alt=""><span class="compact-story-title">Полезные<br>советы</span></span></button>
+      </template>
+      <a class="tariff-match-banner" href="./match.html" data-node-id="25441:37595" hidden>
+        <span class="tariff-match-banner-glow" aria-hidden="true"></span>
+        <span class="tariff-match-banner-copy">
+          <strong>А вдруг есть тот самый?</strong>
+          <span>Познакомьтесь с тарифом, который подходит именно вам</span>
+        </span>
+        <span class="tariff-match-banner-art" aria-hidden="true"><img src="./assets/tariff-match-smile-banner.webp" width="80" height="80.65" decoding="async" loading="lazy" alt=""></span>
+      </a>
+      <div class="account-carousel-frame">
+      <section class="account-carousel" aria-label="Мои номера" tabindex="0" data-node-id="25055:9463">
+        <article class="account-card" data-node-id="25055:9464">
+          <div class="account-info">
+            <p class="account-name">Главная</p>
+            <h1 class="phone" data-no-phone-link>+7 (999) 252-61-05</h1>
+            <p class="account-price">590 ₽ в месяц, списание 1 марта</p>
+          </div>
+          <button class="number-menu" type="button" aria-label="Действия с номером"><img src="./assets/60adf.svg" alt=""></button>
+          <div class="account-bottom">
+            <img class="sim-art" src="./assets/d841e.webp" width="140" height="140" alt="">
+            <p class="balance" aria-label="Баланс">300 ₽</p>
+            <div class="account-buttons">
+              <a class="primary" href="./topup.html?sim=0">Пополнить</a>
+              <div class="secondary">Подключить автоплатёж</div>
+            </div>
+          </div>
+        </article>
+        <article class="account-card account-card-issue" aria-label="Вторая SIM-карта с уведомлениями">
+          <div class="account-info">
+            <h2 class="phone" data-no-phone-link>+7 (914) 680-40-60</h2>
+            <p class="account-price">590 ₽ в месяц, списание 1 марта</p>
+          </div>
+          <button class="number-menu" type="button" aria-label="Действия с номером"><img src="./assets/60adf.svg" alt=""></button>
+          <div class="account-bottom">
+            <img loading="lazy" decoding="async" class="sim-art" src="./assets/sim-issue.webp" width="140" height="140" alt="">
+            <p class="balance" aria-label="Баланс">2 ₽</p>
+            <div class="account-buttons">
+              <a class="primary" href="./topup.html?sim=1">Пополнить</a>
+              <div class="secondary">Подключить автоплатёж</div>
+            </div>
+          </div>
+          <div class="account-notice">
+            <span class="account-notice-label"><img src="./assets/alert-issue.svg" width="24" height="24" alt=""><span>3 важных уведомления</span></span>
+            <img src="./assets/alert-arrow.svg" width="16" height="16" alt="">
+          </div>
+        </article>
+        <article class="account-card" aria-label="Третья SIM-карта">
+          <div class="account-info">
+            <p class="account-name">Главная</p>
+            <h2 class="phone" data-no-phone-link>+7 (914) 680-40-61</h2>
+            <p class="account-price">590 ₽ в месяц, списание 1 марта</p>
+          </div>
+          <button class="number-menu" type="button" aria-label="Действия с номером"><img src="./assets/60adf.svg" alt=""></button>
+          <div class="account-bottom">
+            <img class="sim-art" src="./assets/d841e.webp" width="140" height="140" alt="">
+            <p class="balance" aria-label="Баланс">300 ₽</p>
+            <div class="account-buttons">
+              <a class="primary" href="./topup.html?sim=2">Пополнить</a>
+              <div class="secondary">Подключить автоплатёж</div>
+            </div>
+          </div>
+        </article>
+        <article class="account-card account-card-compact" aria-label="Четвёртая SIM-карта" data-node-id="25805:33589">
+          <div class="account-info">
+            <h2 class="phone" data-no-phone-link>+7 (999) 252-61-05</h2>
+            <p class="account-price">590 ₽ в месяц, списание 1 марта</p>
+          </div>
+          <button class="number-menu" type="button" aria-label="Действия с номером"><img class="compact-corner" src="./assets/sim-compact-corner.svg" alt=""><img class="compact-menu-dots" src="./assets/sim-compact-menu.svg" alt=""></button>
+          <div class="account-bottom">
+            <p class="balance" aria-label="Баланс">300 ₽</p>
+            <div class="account-buttons">
+              <a class="primary" href="./topup.html?sim=3">Пополнить</a>
+              <div class="secondary">Автоплатёж</div>
+            </div>
+          </div>
+        </article>
+      </section>
+      </div>
+
+      <section class="tariff card" data-node-id="25055:9488" aria-label="Мой тариф: 10 Гб из 10, 600 минут из 600">
+        <span class="card-heading"><span>Мой тариф</span><img src="./assets/387c5.svg" alt=""></span>
+        <span class="allowances">
+          <span class="allowance"><span class="allowance-value"><span data-count-to="10">10</span> Гб</span><span class="allowance-caption">из 10</span><span class="usage-bar"><span></span></span></span>
+          <span class="allowance"><span class="allowance-value minutes"><span data-count-to="600">600</span> мин</span><span class="allowance-caption">из 600</span><span class="usage-bar"><span></span></span></span>
+        </span>
+      </section>
+
+      <section class="quick-cards" aria-label="Управление связью" data-node-id="25055:9507">
+        <div class="quick-card card" data-node-id="25055:9508"><span class="title">Расходы</span><img class="quick-arrow" src="./assets/387c5.svg" alt=""><span class="money-art"><img loading="lazy" decoding="async" src="./assets/becab.webp" alt=""></span></div>
+        <div class="quick-card card" data-node-id="25055:9514"><span class="title">Услуги</span><img class="quick-arrow" src="./assets/387c5.svg" alt=""><img loading="lazy" decoding="async" class="services-art" src="./assets/c60b9.webp" width="48" height="48" alt=""></div>
+      </section>
+
+      <section class="security-card card" aria-label="Безопасность" data-node-id="25147:6523">
+        <div class="security-header" data-node-id="25147:6524">
+          <span class="security-art" aria-hidden="true"><img loading="lazy" decoding="async" src="./assets/7cb68.webp" alt=""></span>
+          <span class="service-text"><span class="title">Безопасность</span><span class="service-description protection"><img src="./assets/60121.svg" alt="">Высокий уровень защиты</span></span>
+          <img class="row-arrow" src="./assets/387c5.svg" alt="">
+        </div>
+        <div class="security-swiper" aria-label="Антиспам и история звонков" data-node-id="25147:6535">
+          <article class="security-call-card" data-node-id="25147:6536">
+            <div class="security-call-top">
+              <div class="security-call-info"><strong>+7 (999) 999-99-99</strong><span class="security-call-caption"><img src="./assets/security-call-arrow.svg" alt="">Антиспам</span></div>
+              <time>16:38</time>
+            </div>
+            <span class="security-small-button">Разблокировать</span>
+          </article>
+          <article class="security-history-card" data-node-id="25147:6547">
+            <strong>Больше звонков<br>в Истории звонков</strong>
+            <span class="security-small-button">Перейти</span>
+            <img loading="lazy" decoding="async" class="security-history-art" src="./assets/security-calls-source.webp" alt="">
+          </article>
+        </div>
+      </section>
+      <div class="service-row card" data-node-id="25055:9531">
+        <img loading="lazy" decoding="async" class="service-art" src="./assets/3835e.webp" width="48" height="48" alt="">
+        <span class="service-text"><span class="title">Роуминг</span></span>
+        <img class="row-arrow" src="./assets/387c5.svg" alt="">
+      </div>
+      <div class="service-row card" data-node-id="25055:9532">
+        <img loading="lazy" decoding="async" class="service-art" src="./assets/d4f76.webp" width="48" height="48" alt="">
+        <span class="service-text"><span class="title">Близкий круг</span><span class="service-description">Общий баланс для всех</span></span>
+        <img class="row-arrow" src="./assets/387c5.svg" alt="">
+      </div>
+    </main>
+
+    <footer class="tab-bar" data-node-id="25055:9533">
+      <div class="tabs">
+        <div class="tab active"><img src="./assets/54717.svg" alt=""><span>Мобайл</span></div>
+        <div class="tab"><img src="./assets/7679d.svg" alt=""><span>Для вас</span></div>
+        <div class="tab"><img src="./assets/a1d73.svg" alt=""><span>Помощь</span></div>
+      </div>
+      <div class="home-indicator" aria-hidden="true"><span></span></div>
+    </footer>
+  </div>
+  <dialog class="number-control" aria-label="Пульт управления номером" data-node-id="25147:6736">
+    <div class="number-control-header">
+      <button class="number-control-close" type="button" aria-label="Закрыть пульт"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.29289 6.29289C6.68342 5.90237 7.31643 5.90237 7.70696 6.29289L11.9999 10.5859L16.2929 6.29289C16.6834 5.90237 17.3164 5.90237 17.707 6.29289C18.0975 6.68342 18.0975 7.31643 17.707 7.70696L13.414 11.9999L17.707 16.2929C18.0975 16.6834 18.0975 17.3164 17.707 17.707C17.3164 18.0975 16.6834 18.0975 16.2929 17.707L11.9999 13.414L7.70696 17.707C7.31643 18.0975 6.68342 18.0975 6.29289 17.707C5.90237 17.3164 5.90237 16.6834 6.29289 16.2929L10.5859 11.9999L6.29289 7.70696C5.90237 7.31643 5.90237 6.68342 6.29289 6.29289Z" fill="#0B0C0D" fill-opacity=".86"/></svg></button>
+    </div>
+    <div class="number-control-grid">
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-rename.svg" alt=""></span><span>Переименовать</span></button>
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-autopay.svg" alt=""></span><span>Автоплатежи</span></button>
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-beautiful-number.svg" alt=""></span><span>Красивые номера</span></button>
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-esim.svg" alt=""></span><span>Заменить на eSIM</span></button>
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-expenses.svg" alt=""></span><span>Расходы</span></button>
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-transfer.svg" alt=""></span><span>Перенести номер</span></button>
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-tariff.svg" alt=""></span><span>Тариф и услуги</span></button>
+      <button class="number-control-tile" type="button"><span class="number-control-icon"><img loading="lazy" decoding="async" src="./assets/control-topup.svg" alt=""></span><span>Пополнить</span></button>
+    </div>
+    <div class="number-control-indicator" aria-hidden="true"><span></span></div>
+  </dialog>
+  <dialog class="story-viewer" aria-label="Сториз Ассистент плюс" tabindex="-1">
+  <div class="story-stage" data-slide="0">
+    <div class="story-card">
+      <div class="story-slides"></div>
+      <div class="story-progress" aria-label="Прогресс просмотра"></div>
+      <button class="story-close" type="button" aria-label="Закрыть сториз"><img data-src="./assets/assistant-74b82.svg" alt=""></button>
+      <button class="story-navigation story-previous" type="button" aria-label="Предыдущая история"></button>
+      <button class="story-navigation story-next" type="button" aria-label="Следующая история"></button>
+      <span class="story-loading" role="status">Загрузка…</span>
+      <span class="story-toast" role="status" hidden></span>
+      <div class="story-actions">
+      <button class="story-subscribe" type="button" disabled>Узнать подробнее</button>
+      <button class="story-share" type="button" aria-label="Поделиться историей" disabled><img data-src="./assets/story-share.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>
